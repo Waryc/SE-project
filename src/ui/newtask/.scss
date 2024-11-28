@@ -1,0 +1,345 @@
+.newtask {
+    width: 343px;
+    height: 395px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 32px;
+    column-gap: 32px;
+    padding: 20px;
+    overflow: hidden;
+    background: #FFFFFF;
+
+    .header {
+        flex-shrink: 0;
+        width: 303px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 16px;
+        column-gap: 16px;
+
+        .text {
+            flex-shrink: 0;
+            align-self: stretch;
+            width: 303px;
+            height: 16px;
+            color: #91929F;
+            font-family: "Open Sans";
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+
+        .text-1 {
+            flex-shrink: 0;
+            align-self: stretch;
+            width: 303px;
+            height: 28px;
+            color: #26262C;
+            font-family: "Open Sans";
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .step {
+        flex-shrink: 0;
+        width: 303px;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        row-gap: 20px;
+        column-gap: 20px;
+
+        .progress-bar {
+            flex-shrink: 0;
+            align-self: stretch;
+            width: 303px;
+            height: 12px;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            column-gap: 4px;
+            row-gap: 0px;
+
+            .progress-4 {
+                flex-grow: 1;
+                width: 72.75px;
+                height: 12px;
+                border-radius: 0px 999px 999px 0px;
+                background: #EEEEF0;
+            }
+
+            .progress-3 {
+                flex-grow: 1;
+                width: 72.75px;
+                height: 12px;
+                background: #EEEEF0;
+            }
+
+            .progress-2 {
+                flex-grow: 1;
+                width: 72.75px;
+                height: 12px;
+                background: #EEEEF0;
+            }
+
+            .progress {
+                flex-grow: 1;
+                width: 72.75px;
+                height: 12px;
+            }
+        }
+
+        .progress-5 {
+            flex-shrink: 0;
+            align-self: stretch;
+            width: 303px;
+            height: 192px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            row-gap: 12px;
+            column-gap: 12px;
+
+            .divider {
+                flex-shrink: 0;
+                align-self: stretch;
+                width: 303px;
+                height: 2px;
+            }
+
+            .step1 {
+                flex-shrink: 0;
+                align-self: stretch;
+                width: 303px;
+                height: 24px;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                column-gap: 12px;
+                row-gap: 0px;
+
+                .step1-image {
+                    flex-shrink: 0;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 999px;
+                    overflow: hidden;
+                    background: #D9D9DE;
+                }
+
+                .text-2 {
+                    flex-grow: 1;
+                    width: 231px;
+                    height: 20px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    color: #91929F;
+                    font-family: "Open Sans";
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .finish-icon {
+                    flex-shrink: 0;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            .divider-1 {
+                flex-shrink: 0;
+                align-self: stretch;
+                width: 303px;
+                height: 2px;
+            }
+
+            .step2 {
+                flex-shrink: 0;
+                align-self: stretch;
+                width: 303px;
+                height: 24px;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                column-gap: 12px;
+                row-gap: 0px;
+
+                .step1-image-1 {
+                    flex-shrink: 0;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 999px;
+                    overflow: hidden;
+                    background: #D9D9DE;
+                }
+
+                .text-3 {
+                    flex-grow: 1;
+                    width: 231px;
+                    height: 20px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    color: #4C4C57;
+                    font-family: "Open Sans";
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .ellipse-11 {
+                    flex-shrink: 0;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            .divider-2 {
+                flex-shrink: 0;
+                align-self: stretch;
+                width: 303px;
+                height: 2px;
+            }
+
+            .step3 {
+                flex-shrink: 0;
+                align-self: stretch;
+                width: 303px;
+                height: 24px;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                column-gap: 12px;
+                row-gap: 0px;
+
+                .step3-image {
+                    flex-shrink: 0;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 999px;
+                    overflow: hidden;
+                    background: #D9D9DE;
+                }
+
+                .text-4 {
+                    flex-grow: 1;
+                    width: 231px;
+                    height: 20px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    color: #4C4C57;
+                    font-family: "Open Sans";
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .ellipse-12 {
+                    flex-shrink: 0;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            .divider-3 {
+                flex-shrink: 0;
+                align-self: stretch;
+                width: 303px;
+                height: 2px;
+            }
+
+            .step4 {
+                flex-shrink: 0;
+                align-self: stretch;
+                width: 303px;
+                height: 24px;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                column-gap: 12px;
+                row-gap: 0px;
+
+                .step4-image {
+                    flex-shrink: 0;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 999px;
+                    overflow: hidden;
+                    background: #D9D9DE;
+                }
+
+                .text-5 {
+                    flex-grow: 1;
+                    width: 231px;
+                    height: 20px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    color: #4C4C57;
+                    font-family: "Open Sans";
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .ellipse-13 {
+                    flex-shrink: 0;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            .divider-4 {
+                flex-shrink: 0;
+                align-self: stretch;
+                width: 303px;
+                height: 2px;
+            }
+        }
+
+        .text-6 {
+            flex-shrink: 0;
+            width: 24px;
+            height: 16px;
+            white-space: nowrap;
+            color: #3578FF;
+            font-family: "Open Sans";
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
