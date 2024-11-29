@@ -12,6 +12,14 @@ public class Listener {
     private UserAction userAction = new UserAction();
     private Scanner scanner;
 
+    private String commandPrompt = 
+        "请输入命令:\n"+
+        "a 添加任务\n"+
+        "d 删除任务\n"+
+        "u 更新任务\n"+
+        "p 查询任务\n"+
+        "q 退出\n";
+
     public void startListening(String inputFilePath) {
         try {
             scanner = new Scanner(new File(inputFilePath));
@@ -19,7 +27,7 @@ public class Listener {
             e.printStackTrace();
             return;
         }
-        System.out.println("请输入命令（a 添加任务, d 删除任务, u 更新任务, p 查询任务, q 退出）：");
+        System.out.println(commandPrompt);
         while (true) {
             if (scanner.hasNextLine()) {
                 String command = scanner.nextLine().trim();
@@ -44,7 +52,7 @@ public class Listener {
                     default:
                         System.out.println("无效的命令，请重新输入。");
                 }
-                System.out.println("请输入命令（a 添加任务, d 删除任务, u 更新任务, p 查询任务, q 退出）：");
+                System.out.println(commandPrompt);
             }
         }
     }
