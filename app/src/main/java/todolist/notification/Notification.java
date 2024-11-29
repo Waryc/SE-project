@@ -43,5 +43,10 @@ public class Notification {
 
     public void notificate() {
         // 发送通知
+        if (task != null) {
+            System.out.println("通知：" + task.getName() + "，时间：" + time + "，方式：" + method);
+        } else {
+            System.out.println("通知：时间：" + time + "，方式：" + method);
+        }
     }
 }

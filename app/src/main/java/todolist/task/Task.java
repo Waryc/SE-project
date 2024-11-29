@@ -76,4 +76,14 @@ public class Task {
     public void setCompleted(boolean completed) {
         isCompleted = completed;
     }
+
+    public void printInfo() {
+        System.out.println("任务ID：" + id);
+        System.out.println("任务名称：" + name);
+        System.out.println("任务描述：" + description);
+        System.out.println("任务属性：" + attribute);
+        System.out.println("任务分类：" + category);
+        System.out.println("任务标签：" + tags);
+        System.out.println("是否已完成：" + isCompleted);
+    }
 }
