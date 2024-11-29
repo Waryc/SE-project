@@ -1,21 +1,21 @@
 package todolist.task;
 
+import java.util.List;
+
 public class Timeline {
 
-    private String name;
+    private List<Task> tasks;
 
-    public Timeline() {
+    public Timeline(List<Task> tasks) {
+        this.tasks = tasks;
     }
 
-    public Timeline(String name) {
-        this.name = name;
+    // getter和setter方法
+    public List<Task> getTasks() {
+        return tasks;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setTasks(List<Task> tasks) {
+        this.tasks = tasks;
     }
 }
