@@ -1,0 +1,113 @@
+.
+├── app
+│   ├── build
+│   │   ├── classes
+│   │   │   └── java
+│   │   │       ├── main
+│   │   │       │   └── todolist
+│   │   │       │       ├── action
+│   │   │       │       │   ├── Listener.class
+│   │   │       │       │   └── UserAction.class
+│   │   │       │       ├── notification
+│   │   │       │       │   ├── Notification.class
+│   │   │       │       │   └── ReminderService.class
+│   │   │       │       ├── priority
+│   │   │       │       │   └── PriorityWeightingSystem.class
+│   │   │       │       ├── task
+│   │   │       │       │   ├── Attribute.class
+│   │   │       │       │   ├── Category.class
+│   │   │       │       │   ├── Tag.class
+│   │   │       │       │   ├── Task.class
+│   │   │       │       │   └── Timeline.class
+│   │   │       │       ├── Todolist.class
+│   │   │       │       └── ui
+│   │   │       │           ├── style.class
+│   │   │       │           └── theme.class
+│   │   │       └── test
+│   │   ├── generated
+│   │   │   └── sources
+│   │   │       ├── annotationProcessor
+│   │   │       │   └── java
+│   │   │       │       └── main
+│   │   │       └── headers
+│   │   │           └── java
+│   │   │               └── main
+│   │   ├── resources
+│   │   │   ├── main
+│   │   │   └── test
+│   │   └── tmp
+│   │       └── compileJava
+│   │           ├── compileTransaction
+│   │           │   ├── backup-dir
+│   │           │   └── stash-dir
+│   │           │       ├── Listener.class.uniqueId1
+│   │           │       └── Todolist.class.uniqueId0
+│   │           └── previous-compilation-data.bin
+│   ├── build.gradle.kts
+│   ├── input.txt
+│   └── src
+│       ├── main
+│       │   ├── java
+│       │   │   ├── todolist
+│       │   │   │   ├── action
+│       │   │   │   │   ├── Listener.java
+│       │   │   │   │   └── UserAction.java
+│       │   │   │   ├── notification
+│       │   │   │   │   ├── Notification.java
+│       │   │   │   │   └── ReminderService.java
+│       │   │   │   ├── priority
+│       │   │   │   │   └── PriorityWeightingSystem.java
+│       │   │   │   ├── task
+│       │   │   │   │   ├── Attribute.java
+│       │   │   │   │   ├── Category.java
+│       │   │   │   │   ├── Deadline.java
+│       │   │   │   │   ├── Tag.java
+│       │   │   │   │   ├── Task.java
+│       │   │   │   │   └── Timeline.java
+│       │   │   │   ├── Todolist.java
+│       │   │   │   └── ui
+│       │   │   │       ├── UIStyle.java
+│       │   │   │       └── UITheme.java
+│       │   │   └── util
+│       │   │       ├── Date.java
+│       │   │       ├── Time.java
+│       │   │       └── Timestamp.java
+│       │   ├── resources
+│       │   └── ui
+│       │       ├── birdview
+│       │       ├── homepage
+│       │       ├── newtask
+│       │       ├── preference
+│       │       └── tmp.js
+│       └── test
+│           ├── java
+│           └── resources
+├── build
+│   └── reports
+│       ├── configuration-cache
+│       │   ├── 12rqsgwj7giy31wl01n6d4zfb
+│       │   │   ├── 2rb6vv6w6x2ap9nxfkwnoro12
+│       │   │   │   └── configuration-cache-report.html
+│       │   │   ├── 5corqznjdcrr0uxv9kmoc5tbm
+│       │   │   │   └── configuration-cache-report.html
+│       │   │   ├── d02p7e6o3484xtitb9kmsw9qf
+│       │   │   │   └── configuration-cache-report.html
+│       │   │   └── efhgwyw8do2imsdinqnbj3zu6
+│       │   │       └── configuration-cache-report.html
+│       │   └── 96nz4ymvvunhgyea3szvkm9t5
+│       │       └── aslu83p1btuca3fxad2q71y48
+│       │           └── configuration-cache-report.html
+│       └── problems
+│           └── problems-report.html
+├── file_structure.txt
+├── gradle
+│   ├── libs.versions.toml
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+└── settings.gradle.kts
+
+60 directories, 50 files
