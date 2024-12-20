@@ -9,17 +9,21 @@ public class Notification {
         EMAIL, SMS, APP
     }
 
-    private Timestamp time; 
+    private Timestamp time;
     private NotificationMethod method;
     private Task task;
 
+    public Notification(NotificationMethod method) {
+        this(new Timestamp(), method);
+    }
+
     public Notification(Timestamp time, NotificationMethod method) {
-        this.time = time;
+        this.time = (time != null) ? time : new Timestamp();
         this.method = method;
     }
 
     public Notification(Timestamp time, NotificationMethod method, Task task) {
-        this.time = time;
+        this.time = (time != null) ? time : new Timestamp();
         this.method = method;
         this.task = task;
     }
@@ -48,5 +52,13 @@ public class Notification {
         } else {
             System.out.println("通知：时间：" + time + "，方式：" + method);
         }
+    }
+
+    public Task getTask() {
+        return task;
+    }
+
+    public void setTask(Task task) {
+        this.task = task;
     }
 }

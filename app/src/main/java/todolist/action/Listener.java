@@ -1,24 +1,26 @@
 package todolist.action;
 
-import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
-import todolist.task.*;
+import todolist.task.Attribute;
+import todolist.task.Category;
+import todolist.task.Task;
 
 public class Listener {
 
     private UserAction userAction = new UserAction();
     private Scanner scanner;
 
-    private String commandPrompt = 
-        "请输入命令:\n"+
-        "a 添加任务\n"+
-        "d 删除任务\n"+
-        "u 更新任务\n"+
-        "p 查询任务\n"+
-        "q 退出\n";
+    private String commandPrompt
+            = "请输入命令:\n"
+            + "a 添加任务\n"
+            + "d 删除任务\n"
+            + "u 更新任务\n"
+            + "p 查询任务\n"
+            + "q 退出\n";
 
     public void startListening(String inputFilePath) {
         try {
@@ -66,7 +68,7 @@ public class Listener {
         System.out.println("输入任务描述：");
         String description = scanner.nextLine();
         // 假设Attribute, Category, Tag等都是通过某种方式输入或预设的
-        Task task = new Task(id, name, description, new Attribute(1,1), new Category("default"), new ArrayList<>());
+        Task task = new Task(id, name, description, Attribute.IMPORTANT, Category.WORK, new ArrayList<>());
         userAction.addTask(task);
         System.out.println("任务添加成功。");
     }

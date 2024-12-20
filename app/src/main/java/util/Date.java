@@ -1,9 +1,16 @@
 package util;
 
 public class Date {
+
     private int year;
     private int month;
     private int day;
+
+    public Date() {
+        this.year = 2024;
+        this.month = 12;
+        this.day = 20;
+    }
 
     public Date(int year, int month, int day) {
         this.year = year;

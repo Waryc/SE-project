@@ -6,6 +6,10 @@ public class Tag {
     private String color;
     private String style;
 
+    public Tag(String name) {
+        this(name, "", "");
+    }
+
     public Tag(String name, String color, String style) {
         this.name = name;
         this.color = color;

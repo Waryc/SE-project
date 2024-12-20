@@ -3,6 +3,7 @@ package todolist.task;
 import java.util.List;
 
 public class Task {
+
     private int id;
     private String name;
     private String description;
@@ -10,6 +11,19 @@ public class Task {
     private Category category;
     private List<Tag> tags; // 一个任务可以有多个标签
     private boolean isCompleted = false; // 任务是否已完成
+
+    public Task() {
+        this.id = 0;
+        this.name = "";
+        this.description = "";
+        this.attribute = null;
+        this.category = null;
+        this.tags = null;
+    }
+
+    public Task(String name) {
+        this.name = name;
+    }
 
     public Task(int id, String name, String description, Attribute attribute, Category category, List<Tag> tags) {
         this.id = id;
@@ -34,6 +48,9 @@ public class Task {
     }
 
     public void setName(String name) {
+        if (name.trim().isEmpty()) {
+            throw new IllegalArgumentException("任务名称不能为空");
+        }
         this.name = name;
     }
 
